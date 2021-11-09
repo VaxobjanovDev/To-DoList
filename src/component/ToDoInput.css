@@ -1,0 +1,84 @@
+.form-group {
+  margin-top: 2rem;
+  position: relative;
+}
+.form input {
+  color: #fff;
+  background: #19191b;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.button {
+  background: #fff;
+  outline: none;
+  position: absolute;
+  top: 10%;
+  right: 25.5%;
+  border: none;
+  width: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.button-icon {
+  color: #29292cb2;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+@media (min-width:577px) and (max-width:1024px){
+    .form input {
+        width: 80%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .button{
+        top:15%;
+        right: 12%;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .button-icon{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .form-group {
+    margin-top: 1rem;
+  }
+
+  .form input {
+    border-radius: 20px;
+    width: 90%;
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    top: 15%;
+    right: 8%;
+    border: none;
+    width: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    height: 1.5rem;
+  }
+  .button-icon {
+    color: #29292cb2;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

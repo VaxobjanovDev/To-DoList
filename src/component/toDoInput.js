@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import {IoIosCheckmarkCircleOutline} from 'react-icons/io'
+import {AiFillPlusCircle} from 'react-icons/ai'
+import './ToDoInput.css'
 
 const ToDoInput = ({ text, setText, todo, setTodo, editItem, setEditItem }) => {
   function upDateTodo(title, id) {
@@ -34,9 +37,9 @@ const ToDoInput = ({ text, setText, todo, setTodo, editItem, setEditItem }) => {
     <>
       <div className="form-group">
         <form onSubmit={onSubmit} className="form">
-          <input autoFocus onChange={handleChange} value={text} type="text" />
+          <input autoFocus onChange={handleChange} value={text} type="text" placeholder='Enter item' />
           <button type="submit" className="button">
-            {editItem ? "Ok" : "Add"}
+            {editItem ? <IoIosCheckmarkCircleOutline className='button-icon'/> : <AiFillPlusCircle className='button-icon'/>}
           </button>
         </form>
       </div>

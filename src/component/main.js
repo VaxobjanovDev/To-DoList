@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ToDoInput from "./toDoInput";
 import ToDoList from "./toDoList";
+import "./Main.css";
 
 const Main = () => {
   const [text, setText] = useState("");
@@ -9,20 +10,20 @@ const Main = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="text-heading">
-          <h2>Practise To Do List</h2>
-          <ToDoInput
-            text={text}
-            setText={setText}
-            todo={todo}
-            setTodo={setTodo}
-            editItem={editItem}
-            setEditItem={setEditItem}
-          />
-        </div>
-        <div className="items">
-          <ToDoList todo={todo} setTodo={setTodo} setEditItem={setEditItem} />
+      <div className="toDo-section">
+        <div className="container">
+          <div className="text-heading">
+            <h2>To Do List</h2>
+            <ToDoInput
+              text={text}
+              setText={setText}
+              todo={todo}
+              setTodo={setTodo}
+              editItem={editItem}
+              setEditItem={setEditItem}
+            />
+            <ToDoList todo={todo} setTodo={setTodo} setEditItem={setEditItem} />
+          </div>
         </div>
       </div>
     </>

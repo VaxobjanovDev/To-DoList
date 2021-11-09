@@ -1,0 +1,78 @@
+.list{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1rem 0;
+}
+
+.list-item input{
+    color: #fff;
+    background: #19191b;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 45%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.button-group{
+    margin-top: 0.150rem;
+    position: absolute;
+    right: 35%; 
+}
+
+.button-group button{
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    border: none;
+    width: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    height:2.5rem;
+    margin: 0 0.5rem;
+}
+
+.icons{
+    color: #29292cb2;
+    border: none;
+   font-size: 1.5rem;
+}
+
+@media screen and (max-width:576px){
+    .list-item input{
+        border-radius: 20px;
+    outline: none;
+    width: 85%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    }
+
+    .button-group button{
+        width: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    height:1.5rem;
+    margin: 0 0.5rem;
+    }
+
+    .button-group{
+        margin-top: 0.4rem;
+        right: 15%; 
+    }
+
+    .icons{
+        font-size: 1rem;
+    }
+}
