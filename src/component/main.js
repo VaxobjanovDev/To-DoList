@@ -5,7 +5,11 @@ import "./Main.css";
 
 const Main = () => {
   const [text, setText] = useState("");
-  const [todo, setTodo] = useState([]);
+  const [todo, setTodo] = useState([
+    {id:1,title:'Watching football match'},
+    {id:2,title:'Playing computer games'},
+    {id:3,title:'Going university'},
+  ]);
   const [editItem, setEditItem] = useState(null);
 
   return (
@@ -22,7 +26,7 @@ const Main = () => {
               editItem={editItem}
               setEditItem={setEditItem}
             />
-            <ToDoList todo={todo} setTodo={setTodo} setEditItem={setEditItem} />
+            <ToDoList key={todo.id} todo={todo} setTodo={setTodo} setEditItem={setEditItem} />
           </div>
         </div>
       </div>

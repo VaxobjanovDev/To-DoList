@@ -13,6 +13,7 @@ html,body{
 .toDo-section{
     background: url('./image/Background-image.jpg');
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -25,7 +26,7 @@ html,body{
 }
 
 .text-heading{
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
     padding: 3rem 0 6rem 0;
     margin-top: 5rem;
     text-align: center;
