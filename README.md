@@ -1,6 +1,5 @@
 #Simple-Todo-App
-
-This is simple app made using Reactjs And you can see this simle app 
+This is simple app made using Reactjs And you can see this simle app todo-apppractise.netlify.app 
 
 # Getting Started with Create React App
 
